@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Whitbread UI Exercise</title>
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+
+<body class="no-js">
+
+<!-- skip link -->
+<a href="#main" class="visually-hidden">Jump to main page content</a>
+
+<!-- page wrapper -->
+<div id="wrapper" class="global-wrapper">
+
+    <header class="global-hd" role="banner">Things to do</header>
+
+    <!-- main content -->
+    <main id="main" role="main">
+        <h1 class="heading1">Recommendations for your area</h1>
+        <form action="" method="" id="placeSearchFrm">
+            <fieldset class="fieldset">
+                <legend class="legend">Search by location:</legend>
+                <label class="label" for="placeName">Place</label>
+                <input class="textfield" id="placeName" type="text" name="placeName" maxlength="100" required>
+                <input class="button" id="placeNameSubmit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <!-- display venue details -->
+        <div id="venues" class="venues"></div>
+    </main>
+    <!-- end main content -->
+
+</div>
+<!-- end page wrapper -->
+
+<!-- bottom of page for quicker page rendering - would use min version in production -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

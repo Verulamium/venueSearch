@@ -1,0 +1,163 @@
+/*
+    ideally would use sass/scss
+    use of normalize
+    would break down css into smaller files - e.g. typography, layout, module based
+    use a grid system? - bit overkill for this assignment
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    line-height:1.2em;
+    box-sizing:border-box;
+}
+html {
+    font:62.5%/1.2em normal arial, verdana, sans-serif;/* 10px */
+    margin: .5rem;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.global-hd {
+    font-size: 3rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.heading1 {
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    font-weight: normal;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.fieldset {
+    margin: 2rem 0;
+}
+
+.legend {
+    font-size: 1.6rem;
+    padding: 0 0 2.5rem 0;
+}
+
+.textfield {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: .8rem 2rem;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: .9rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.label {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.venues {
+    padding: 1rem 0;
+}
+
+.venue__list {
+    list-style-type: none;
+    border-top: 1px solid #bbb;
+}
+
+.venue__list li:nth-child(odd){
+    background-color: #e7f1d8;
+}
+
+.venue__list-item {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #bbb;
+    padding: 0 .5rem;
+}
+
+.venue__list-item-name {
+    width: 100%;
+    display: inline-block;
+}
+
+.venue__list-item-link {
+    display: inline-block;
+    color: #333;
+}
+
+/* larger screen settings - as mobile first approach */
+@media only screen and (min-width: 48rem) {
+
+    .global-hd {
+        font-size: 4rem;
+        padding: 1rem 0 3rem 0;
+    }
+
+    .heading1 {
+        font-size: 2.5rem;
+    }
+    .label {
+        display: inline-block;
+    }
+
+    .textfield {
+        width: 30rem;
+    }
+
+    .legend {
+        padding: 0 0 .5rem 0;
+    }
+
+    .button {
+        background-color: #008CBA;
+        border: none;
+        color: white;
+        padding: .9rem 2rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.6rem;
+        margin-left: 1rem;
+        width: auto;
+    }
+
+    .venues {
+        padding: 2rem 0 4rem 0;
+    }
+    .venue__list-item {
+        font-size: 1.8rem;
+    }
+
+    .venue__list li:nth-child(odd){
+        background-color: #d8e4f1;
+    }
+}
