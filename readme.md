@@ -7,12 +7,12 @@ Approach taken:
 
 Enhancements:
 
-- adopt a TDD approach and write unit tests first before write code
-- use normalize css
 - use a Gulp script to kick off a build and build app from resources
-- use of SASS (bit overkill for this)
+- adopt a TDD approach and write unit tests first before write code
+- use of SASS
 - use more ES6; e.g. use import/export features and drop namespace
 - add field validation with error messages;
 - add more configuration for user: e.g. query for searches on coffee houses etc. make limit and version configurable for api
 - add in validation for no results
+- add in more date from JSON Venue items
 
